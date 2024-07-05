@@ -1,3 +1,135 @@
-h1{
-    background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  color: #fff;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "video menu"
+    "information menu";
+  grid-gap: 0.6rem;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 0.3fr 1fr 1fr;
+  
+
+}
+.section-header {
+    
+  background-color: #0f0f0f;
+  grid-area: header;
+}
+.video-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #ffebcd;
+  grid-area: video;
+  text-align: center;
+}
+.video{
+    width: 100%; /* O ajusta el ancho deseado */
+    height: 100%; /* O ajusta la altura deseada */
+    object-fit: cover; /* Esto mantendrá la relación de aspecto y llenará el contenedor */
+}
+.menu-section {
+  background-color: #ffebcd;
+  grid-area: menu;
+  
+}
+.information-section {
+  background-color: #8f8f8f;
+  grid-area: information;
+  text-align: left;
+  color: #303440;
+  
+  
+}
+.information_main{
+  margin: auto;
+  padding: 10px;
+  position: relative;
+}
+.img-logo {
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-left: 2px;
+  width: 100px;
+  height: auto; /* Esto mantiene la proporción de la imagen */
+}
+.header-title{
+    font-size: 25px;
+}
+.header-elements{
+    display: flex;
+    align-items: start;
+   
+}
+
+
+.nav_link{
+  color: #303440;
+  display: block;
+  padding: 15px 0;
+  text-decoration: none;
+}
+.nav__link--inside{
+  border-radius: 6px;
+  padding-left: 20px;
+  text-align: left;
+}
+.nav__link--inside:hover{
+  background: #F6F8FA;
+
+}
+.list{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0 16px 16px 0;
+  background: #8f8f8f;
+}
+
+.list__item{
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.list__item--click{
+  cursor: pointer;
+}
+
+.list__button{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  width: 70%;
+  margin: 0 auto;
+}
+.arrow .list__arrow{
+  transform: rotate(90deg);
+  transition: transform .3s;
+}
+
+.list__arrow{
+  margin-left: auto;
+}
+
+.list__show{
+  width: 80%;
+  margin-left: auto;
+  border-left: 2px solid #303440;
+  list-style: none;
+  transition: height .4s;
+  height: 0;
+
 }
