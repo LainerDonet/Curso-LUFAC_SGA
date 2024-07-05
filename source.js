@@ -8,6 +8,6 @@ listElements.forEach(listElement => {
         if (menu.clientHeight=="0") {
             height=menu.scrollHeight;
         }
-        menu.style.height = `${height}px`;
+        menu.style.height = `${height+10}px`;
     })
 });

@@ -8,7 +8,6 @@
 
 .container {
   height: 100vh;
-  color: #fff;
   display: grid;
   grid-template-areas:
     "header header"
@@ -19,6 +18,9 @@
   grid-template-rows: 0.3fr 1fr 1fr;
   
 
+}
+.hip__title{
+  text-decoration: none;
 }
 .section-header {
     
@@ -31,6 +33,7 @@
   background-color: #8f8f8f;
   grid-area: video;
   text-align: left;
+  
 }
 .video{
     width: 100%; /* O ajusta el ancho deseado */
@@ -38,7 +41,7 @@
     object-fit: cover; /* Esto mantendrá la relación de aspecto y llenará el contenedor */
 }
 .menu-section {
-  background-color: #ffebcd;
+  background-color: #8f8f8f;
   grid-area: menu;
   
 }
@@ -57,13 +60,12 @@
 }
 .img-logo {
     padding-right: 2px;
-    padding-top: 2px;
-    padding-left: 2px;
   width: 100px;
   height: auto; /* Esto mantiene la proporción de la imagen */
 }
 .header-title{
     font-size: 25px;
+    color: #F6F8FA;
 }
 .header-elements{
     display: flex;
