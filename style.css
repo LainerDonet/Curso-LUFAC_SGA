@@ -28,9 +28,9 @@
 .video-section {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: #ffebcd;
+  background-color: #8f8f8f;
   grid-area: video;
-  text-align: center;
+  text-align: left;
 }
 .video{
     width: 100%; /* O ajusta el ancho deseado */
