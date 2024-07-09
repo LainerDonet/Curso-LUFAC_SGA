@@ -50,13 +50,18 @@
   grid-area: information;
   text-align: left;
   color: #303440;
+ 
   
   
 }
 .information_main{
   margin: auto;
-  padding: 10px;
-  position: relative;
+  padding: 30px;
+  text-align: justify;
+}
+
+.information_ul{
+  padding-left: 30px;
 }
 .img-logo {
     padding-right: 2px;
