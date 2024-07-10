@@ -59,9 +59,20 @@
   padding: 30px;
   text-align: justify;
 }
+.information_title{
+  padding-bottom: 10px;
+}
+.information_p{
+  padding-bottom: 5px;
+}
 
 .information_ul{
   padding-left: 30px;
+  padding-bottom: 5px;
+}               
+.information_ol{
+  padding-left: 30px;
+  padding-bottom: 5px;
 }
 .img-logo {
     padding-right: 2px;
