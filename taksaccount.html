@@ -15,21 +15,24 @@
             </div>
         </header>
         <section class="video-section">
-            <h1>Tarea: Crear cuenta de usuario</h1>
-            <p>
-                Siga los pasos para crear un usuario de prueba.
-            </p>
-            <ul>
+            <div class="information_main">
+                <h1 class="information_title">Tarea 3: Crear cuenta de usuario</h1>
+                <p class="information_p">
+                    Siga los pasos para crear un usuario de prueba.
+                </p>
+            <ul class="information_ul">
                 <li>Haga clic en la pestaña Cuentas</li>
-                <li>Haga clic en el botón "Crear una cuenta nueva"</li>
+                <li>Haga clic en el botón "Crear una cuenta"</li>
                 <li>Ingrese el nombre completo > Usuario de prueba</li>
-                 <li>Ingrese el nombre de usuario > usuario de prueba</li>
+                <li>Ingrese el nombre de usuario > user_test</li>
                 <li>Elija una contraseña y vuelva a ingresarla</li>
                 <li>Haga clic en Crear</li>
             </ul>
-            <p>
+            <p class="information_p">
                 Su cuenta ya está creada y debería aparecer en la lista.
             </p>
+            </div>
+            
         </section>
         <section class="menu-section">
             <ul class="list">
@@ -59,7 +62,7 @@
                             <a href="demo2.html" class="nav_link nav__link--inside">Demo Establecer Configuraciones de la Hora</a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Configurar opciones de energía</a>
+                            <a href="demo3.html" class="nav_link nav__link--inside">Configurar opciones de energía</a>
                         </li>
                     </ul>
                 </li>
@@ -71,10 +74,10 @@
                     </div>
                     <ul class="list__show">
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Administración de usuarios</a>
+                            <a href="taksaccount.html" class="nav_link nav__link--inside">Administración de usuarios</a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Crear cuentas de usuarios</a>
+                            <a href="demo4.html" class="nav_link nav__link--inside">Crear cuentas de usuarios</a>
                         </li>
                         
                     </ul>
@@ -82,14 +85,9 @@
                 <li class="list__item">
                     <div class="list__button list__button--click">
                         <img src="assets/img/systemd.svg" class="list__img">
-                        <a href="#" class="nav_link">SystemD</a>
-                        <img src="assets/img/arrow.svg" class="list__arrow">
+                        <a href="demo5.html" class="nav_link">SystemD</a>
                     </div>
-                    <ul class="list__show">
-                        <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Administración de servicios con systemd</a>
-                        </li>
-                    </ul>
+                    
                 </li>
                 <li class="list__item">
                     <div class="list__button list__button--click">
@@ -99,22 +97,22 @@
                     </div>
                     <ul class="list__show">
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Descripción general del almacenamiento</a>
+                            <a href="demo6.html" class="nav_link nav__link--inside">Descripción general del almacenamiento</a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Almacenamiento Tradicional</a>
+                            <a href="demo7.html" class="nav_link nav__link--inside">Almacenamiento Tradicional</a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Crear y administrar LVM </a>
+                            <a href="demo8.html" class="nav_link nav__link--inside">Crear y administrar LVM </a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">RAID volumes </a>
+                            <a href="demo9.html" class="nav_link nav__link--inside">RAID volumes </a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">VDO volumes </a>
+                            <a href="demo10.html" class="nav_link nav__link--inside">VDO volumes </a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">NFS share </a>
+                            <a href="demo11.html" class="nav_link nav__link--inside">NFS share </a>
                         </li>
 
                         
@@ -199,18 +197,33 @@
             </ul>
         </section>
         <section class="information-section">
-            <div class="infomation_main">
-                <h3>Infomación</h3>
-            <p>En este taller de administración se presentará la herramienta LUFAC SGA. Una herramienta de administración por y para las soluciones LUFAC disponibles en el mercado, como son:</p>
-            <ul>
-                <li> <b>Estaciones de trabajo:</b> Las Estaciones de Trabajo o Workstations son soluciones LUFAC de alto nivel de personalización  </li>
-                <li><b>Cerebro:</b>Cerebro es una solución LUFAC especializada en el uso de GPU y CPU orientado a la programación científica</li>
-                <li><b>Servidores:</b>Equipos de cómputo especializado establecer relaciones clientes-servidor</li>
-                <li><b>Clusters:</b>Sistemas distribuidos para conjuntos de computadoras unidas entre sí que se comportan como si fuesen un único servidor.</li>
-            </ul>
-            <p>
-                La herramienta pretende facilitar el uso de las soluciones LUFAC incorporando el uso de nuevas herramientas con el objetivo de sacar el mayor provecho y productividad de la solución LUFAC
-            </p>
+            <div class="information_main">
+                <h1 class="information_title">Gestion de cuentas</h1>
+            <p>La gestión de cuentas de usuario en Linux es fundamental para mantener la seguridad y la eficiencia en un entorno GNU/Linux. Aquí tienes algunos conceptos clave y comandos para manejar usuarios y grupos:</p>
+            <ol class="information_ol">
+                <li><b>Tipos de usuarios en LUFAC SGA:</b>
+                    <ul class="information_ul">
+                        <li><b>Usuario root:</b> El superusuario con privilegios administrativos completos.</li>
+                        <li><b>Usuarios normales:</b> Realizan tareas regulares con permisos limitados.</li>
+                        <li><b>Usuarios del sistema:</b> Asociados a servicios y aplicaciones, no usuarios reales.</li>
+                    </ul>
+                </li>
+                <li><b>Grupos en Linux:</b>
+                    <ul class="information_ul">
+                        <li><b>Grupo wheel/sudo:</b> Contiene usuarios autorizados para ejecutar comandos como superusuario.</li>
+                        <li><b>Grupo users:</b>  Agrupa a usuarios normales.</li>
+                        <li><b>Grupo adm:</b>  Gestiona acceso a registros y archivos de registro.</li>
+                    </ul>
+                </li>
+                <li><b>Comandos para la gestión de usuarios y grupos:</b>
+                    <ul class="information_ul">
+                        <li><code>useradd</code>: Añade un nuevo usuario al sistema.</li>
+                        <li><code>passwd</code>: Establece o cambia la contraseña de un usuario.</li>
+                        <li><code>usermod</code>: Modifica propiedades de usuario (nombre completo, grupo primario).</li>
+                        <li><code>userdel</code>: Elimina un usuario del sistema.</li>
+                    </ul>
+                </li>
+            </ol>
 
             </div>
             

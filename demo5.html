@@ -48,7 +48,7 @@
                             <a href="demo2.html" class="nav_link nav__link--inside">Demo Establecer Configuraciones de la Hora</a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Configurar opciones de energía</a>
+                            <a href="demo3.html" class="nav_link nav__link--inside">Configurar opciones de energía</a>
                         </li>
                     </ul>
                 </li>
@@ -60,10 +60,10 @@
                     </div>
                     <ul class="list__show">
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Administración de usuarios</a>
+                            <a href="taksaccount.html" class="nav_link nav__link--inside">Administración de usuarios</a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Crear cuentas de usuarios</a>
+                            <a href="demo4.html" class="nav_link nav__link--inside">Crear cuentas de usuarios</a>
                         </li>
                         
                     </ul>
@@ -71,14 +71,9 @@
                 <li class="list__item">
                     <div class="list__button list__button--click">
                         <img src="assets/img/systemd.svg" class="list__img">
-                        <a href="#" class="nav_link">SystemD</a>
-                        <img src="assets/img/arrow.svg" class="list__arrow">
+                        <a href="demo5.html" class="nav_link">SystemD</a>
                     </div>
-                    <ul class="list__show">
-                        <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Administración de servicios con systemd</a>
-                        </li>
-                    </ul>
+                    
                 </li>
                 <li class="list__item">
                     <div class="list__button list__button--click">
@@ -88,22 +83,22 @@
                     </div>
                     <ul class="list__show">
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Descripción general del almacenamiento</a>
+                            <a href="demo6.html" class="nav_link nav__link--inside">Descripción general del almacenamiento</a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Almacenamiento Tradicional</a>
+                            <a href="demo7.html" class="nav_link nav__link--inside">Almacenamiento Tradicional</a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Crear y administrar LVM </a>
+                            <a href="demo8.html" class="nav_link nav__link--inside">Crear y administrar LVM </a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">RAID volumes </a>
+                            <a href="demo9.html" class="nav_link nav__link--inside">RAID volumes </a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">VDO volumes </a>
+                            <a href="demo10.html" class="nav_link nav__link--inside">VDO volumes </a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">NFS share </a>
+                            <a href="demo11.html" class="nav_link nav__link--inside">NFS share </a>
                         </li>
 
                         
@@ -188,17 +183,50 @@
             </ul>
         </section>
         <section class="information-section">
-            <div class="infomation_main">
-                <h3>Infomación</h3>
-            <p>En este taller de administración se presentará la herramienta LUFAC SGA. Una herramienta de administración por y para las soluciones LUFAC disponibles en el mercado, como son:</p>
-            <ul>
-                <li> <b>Estaciones de trabajo:</b> Las Estaciones de Trabajo o Workstations son soluciones LUFAC de alto nivel de personalización  </li>
-                <li><b>Cerebro:</b>Cerebro es una solución LUFAC especializada en el uso de GPU y CPU orientado a la programación científica</li>
-                <li><b>Servidores:</b>Equipos de cómputo especializado establecer relaciones clientes-servidor</li>
-                <li><b>Clusters:</b>Sistemas distribuidos para conjuntos de computadoras unidas entre sí que se comportan como si fuesen un único servidor.</li>
-            </ul>
+            <div class="information_main">
+                <h1 class="information_title">SystemD</h1>
+            <p><b>SystemD</b> es el administrador de servicios y sistemas en Linux, y se ha convertido en la estandarización en la mayoría de las distribuciones basadas en Debian y Red Hat. Fue desarrollado con el objetivo de encargarse de arrancar todo lo que está por debajo del Kernel, permitiendo ejecutar varios procesos de manera simultánea1. Algunas de sus características clave son:</p>
+            <ol class="information_ol">
+                <li><b>Paralelización:</b> SystemD proporciona una notable capacidad de paralelización en el inicio de servicios.</li>
+                <li><b>Activación de socket y D-Bus:</b> Utiliza estos mecanismos para iniciar los servicios.</li>
+                <li><b>Inicio bajo demanda:</b> Los demonios se inician según la demanda.</li>
+                <li><b>Seguimiento de procesos:</b>Utiliza grupos de control de Linux para rastrear procesos.</li>
+                <li><b>Snapshotting y restauración del estado del sistema:</b>Permite crear instantáneas y restaurar el sistema.</li>
+                <li><b>Gestión de dependencias lógica:</b> Implementa un sistema de gestión de dependencias basado en el control lógico de los servicios.</li>
+            </ol>
             <p>
-                La herramienta pretende facilitar el uso de las soluciones LUFAC incorporando el uso de nuevas herramientas con el objetivo de sacar el mayor provecho y productividad de la solución LUFAC
+                Además, SystemD ofrece utilidades como systemctl para controlar el sistema y los servicios, <code>journalctl</code> para administrar el registro, <code>hostnamectl</code>  para configurar el nombre de host, <code>localectl</code> para la distribución local y el teclado, y <code>timedatectl</code> para establecer la hora y la fecha del sistema
+            </p>
+            <p class="information_p"><b>Objetivos(Targets)</b></p>
+            <p class="information_p">
+                Los <b>.target</b> en GNU/Linux son puntos de sincronización utilizados por el sistema para establecer un determinado estado. Estos <b>targets</b> están interrelacionados y permiten definir qué servicios y unidades se ejecutarán al iniciar el sistema operativo. Por ejemplo, el sysinit.target inicia todos los servicios y unidades de bajo nivel necesarios para que el sistema sea marginalmente funcional y permita el paso al target básico
+            </p>
+            <p class="information_p"><b>Sockets</b></p>
+            <p class="information_p">
+                Los sockets en GNU/Linux son interfaces de entrada-salida de datos que permiten la intercomunicación entre procesos. Funcionan de manera similar a los teléfonos, permitiendo la comunicación entre procesos, ya sea en el mismo sistema o a través de una red1. Aquí tienes algunos detalles clave:
+            </p>
+            <ol class="information_ol">
+                <li><b>Dominios de comunicación:</b> Los sockets se crean dentro de un dominio de comunicación. Por ejemplo:
+                    <ul class="information_ul">
+                        <li><b>AF_INET:</b> Para procesos en distintos sistemas unidos mediante una red TCP/IP.</li>
+                        <li><b>AF_UNIX:</b> Para procesos en el mismo sistema.</li>
+                        <li>También existen otros dominios de comunicación1.</li>
+                    </ul>
+                </li>
+                <li>Tipos de sockets en AF_INET:
+                    <ul class="information_ul">
+                        <li><b>Sockets Stream:</b> Utilizan el protocolo TCP, proporcionando un flujo de datos bidireccional, secuenciado y libre de errores.</li>
+                        <li><b>Sockets Datagram:</b> Utilizan el protocolo UDP, con paquetes que pueden llegar fuera de secuencia o contener errores.</li>
+                    </ul>
+                </li>
+            </ol>
+            <p class="information_p">Los sockets son fundamentales para la comunicación entre procesos y permiten conexiones rápidas y eficientes sin sobrecarga de red</p>
+            <p class="information_p"><b>Temporizadores(Timers)</b></p>
+            <p> Los archivos .timer en GNU/Linux son unidades de SystemD que permiten programar tareas para que se ejecuten en momentos específicos o con intervalos regulares. Un archivo .timer es un archivo de configuración que define un temporizador. Puede estar asociado a una unidad de servicio o a una tarea específica. Los .timer se utilizan para activar servicios o tareas en momentos específicos, como iniciar una copia de seguridad diaria o ejecutar una limpieza semanal. Los archivos .timer se encuentran en el directorio <code>/etc/systemd/system/</code> o <code>/usr/lib/systemd/system/</code>. Su sintaxis es similar a otros archivos de configuración de SystemD. Los archivos .timer son una herramienta poderosa para automatizar tareas en sistemas Linux mediante SystemD.
+            </p>
+            <p class="information_p"><b>Rutas(Path)</b></p>
+            <p class="information_p">
+                La variable de entorno PATH en GNU/Linux es una lista de rutas que especifica dónde se encuentran los archivos ejecutables en el sistema. Cuando ejecutas un comando en la terminal, el intérprete de comandos busca esos ejecutables en los directorios listados en PATH en un orden específico. Por ejemplo, si deseas ejecutar un comando como <code>ls</code> , el sistema buscará en los directorios especificados en PATH para encontrar el archivo ejecutable correspondiente
             </p>
 
             </div>

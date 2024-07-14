@@ -15,28 +15,26 @@
             </div>
         </header>
         <section class="video-section">
-            <h1>Tarea: Actualizar la hora del sistema</h1>
-            <p>
-                Para actualizar la hora del sistema:
-            </p>
-            <ul>
-                <li>Click System</li>
-                <li>Click System Time</li>
-                <li>Se abre el cuadro de diálogo Cambiar hora del sistema</li>
-                <li>En el campo "Zona horaria", configure su zona horaria en el menú desplegable</li>
-                <li>En el campo "Establecer hora" hay algunas opciones.</li>
-                <ul>
-                    <li>Manualmente</li>
-                    <li>Automáticamente usando NTP</li>
-                    <li>Utilizando automáticamente un servidor NTP específico</li>
+            <div class="information_main">
+                <h1 class="information_title">Tarea 2: Configurar hora del sistema</h1>
+                <p class="information_p">
+                    Para configurar la hora del sisstema siga los siguientes pasos:
+                </p>
+                <ul class="information_ul">
+                    <li>En la sección "Vision Global" > Configuraciones > Nombre del Afitrión. Hacer Click en el link con la hora de sistema</li>
+                    <li>En el campo "Uso horario", configure su zona horaria en el menú desplegable</li>
+                    <li>En el campo "Establecer la hora" hay algunas opciones:
+                        <ul class="information_ul">
+                            <li>Manualmente</li>
+                            <li>Automáticamente usando NTP</li>
+                            <li>Utilizando automáticamente un servidor NTP específico</li>
+                        </ul>
+                    </li>
+                    <li>Seleccione Automático usando NTP</li>
+                    <li>Haga clic en Cambiar</li>
                 </ul>
-                <li>Seleccione Automático usando NTP</li>
-                <li>Haga clic en Cambiar</li>
-            </ul>
-            <p>
-                La hora se actualizará.
-                Si tienes dificultades, puedes seguir los pasos en la siguiente demostración.
-            </p>
+                <p>La hora se actualizará. A continuación vea la demo donde se ejercitará a profundidad</p>
+            </div>
         </section>
         <section class="menu-section">
             <ul class="list">
@@ -66,7 +64,7 @@
                             <a href="demo2.html" class="nav_link nav__link--inside">Demo Establecer Configuraciones de la Hora</a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Configurar opciones de energía</a>
+                            <a href="demo3.html" class="nav_link nav__link--inside">Configurar opciones de energía</a>
                         </li>
                     </ul>
                 </li>
@@ -78,10 +76,10 @@
                     </div>
                     <ul class="list__show">
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Administración de usuarios</a>
+                            <a href="taksaccount.html" class="nav_link nav__link--inside">Administración de usuarios</a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Crear cuentas de usuarios</a>
+                            <a href="demo4.html" class="nav_link nav__link--inside">Crear cuentas de usuarios</a>
                         </li>
                         
                     </ul>
@@ -89,14 +87,9 @@
                 <li class="list__item">
                     <div class="list__button list__button--click">
                         <img src="assets/img/systemd.svg" class="list__img">
-                        <a href="#" class="nav_link">SystemD</a>
-                        <img src="assets/img/arrow.svg" class="list__arrow">
+                        <a href="demo5.html" class="nav_link">SystemD</a>
                     </div>
-                    <ul class="list__show">
-                        <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Administración de servicios con systemd</a>
-                        </li>
-                    </ul>
+                    
                 </li>
                 <li class="list__item">
                     <div class="list__button list__button--click">
@@ -106,22 +99,22 @@
                     </div>
                     <ul class="list__show">
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Descripción general del almacenamiento</a>
+                            <a href="demo6.html" class="nav_link nav__link--inside">Descripción general del almacenamiento</a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Almacenamiento Tradicional</a>
+                            <a href="demo7.html" class="nav_link nav__link--inside">Almacenamiento Tradicional</a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Crear y administrar LVM </a>
+                            <a href="demo8.html" class="nav_link nav__link--inside">Crear y administrar LVM </a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">RAID volumes </a>
+                            <a href="demo9.html" class="nav_link nav__link--inside">RAID volumes </a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">VDO volumes </a>
+                            <a href="demo10.html" class="nav_link nav__link--inside">VDO volumes </a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">NFS share </a>
+                            <a href="demo11.html" class="nav_link nav__link--inside">NFS share </a>
                         </li>
 
                         
@@ -206,18 +199,35 @@
             </ul>
         </section>
         <section class="information-section">
-            <div class="infomation_main">
-                <h3>Infomación</h3>
-            <p>En este taller de administración se presentará la herramienta LUFAC SGA. Una herramienta de administración por y para las soluciones LUFAC disponibles en el mercado, como son:</p>
-            <ul>
-                <li> <b>Estaciones de trabajo:</b> Las Estaciones de Trabajo o Workstations son soluciones LUFAC de alto nivel de personalización  </li>
-                <li><b>Cerebro:</b>Cerebro es una solución LUFAC especializada en el uso de GPU y CPU orientado a la programación científica</li>
-                <li><b>Servidores:</b>Equipos de cómputo especializado establecer relaciones clientes-servidor</li>
-                <li><b>Clusters:</b>Sistemas distribuidos para conjuntos de computadoras unidas entre sí que se comportan como si fuesen un único servidor.</li>
-            </ul>
-            <p>
-                La herramienta pretende facilitar el uso de las soluciones LUFAC incorporando el uso de nuevas herramientas con el objetivo de sacar el mayor provecho y productividad de la solución LUFAC
-            </p>
+            <div class="information_main">
+                <h1 class="infornation_title">Protocolo de Tiempo en Redes</h1>
+                <p class="information_p">
+                    El servicio de hora de Linux utiliza el Protocolo de Tiempo de Redes (NTP) para sincronizar los relojes de los equipos en una red. Esto garantiza que se asigne un valor de reloj preciso a las solicitudes de validación de red y acceso a recursos. El NTP funciona a través de paquetes UDP en el puerto 123 y está diseñado para resistir los efectos de la latencia variable.
+                </p>
+                <p class="information_p">
+                    O explicado de forma más clara: <b>Es capaz de indicar la hora de forma precisa incluso cuando la comunica por medios que pueden ser lentos.</b>
+                </p>
+                <p class="information_p">
+                    La Configuración de la hora es mejor a través de NTP porque:
+                </p>
+                <ol class="information_ol">
+                    <li><b>Precisión y Sincronización:</b> El NTP garantiza una sincronización precisa de la hora en toda la red. Al usar un servidor NTP, todos los dispositivos (como servidores, routers y estaciones de trabajo) pueden mantener una hora consistente y precisa.</li>
+                    <li><b>Servidores NTP locales vs. Públicos:</b>
+                        <ul class="information_ul">
+                            <li><b>Servidores NTP locales:</b> Estos se utilizan para sincronizar el host respectivo y sus clientes dentro de la red. Son menos exigentes en términos de recursos y ofrecen mayor precisión.</li>
+                            <li><b>Servidores NTP públicos:</b> Están disponibles como recursos abiertos para el público en general. Úsalos cuando no haya servidores NTP internos disponibles o cuando necesites una referencia de tiempo adicional. Sin embargo, pueden ser menos precisos y estar sujetos a mayor carga</li>
+                        </ul>
+                        <li><b>Consideraciones al elegir un servidor NTP:</b>
+                            <ul class="information_ul">
+                                <li> <b>Accesibilidad a la red:</b> Asegúrate de que tu red pueda acceder a servidores NTP públicos a través de Internet (puerto UDP 123 desbloqueado).</li>
+                                <li><b>Integridad:</b> ¿Confías en una fuente de tiempo externa o prefieres tu propio hardware protegido?</li>
+                                <li><b>Opciones de alerta:</b> Los servidores internos permiten monitorear y responder a fallas.</li>
+                                <li><b>Precisión:</b> Los servidores internos suelen ofrecer mayor precisión</li>
+                            </ul>
+                        </li>
+
+                    </li>
+                </ol>
 
             </div>
             
