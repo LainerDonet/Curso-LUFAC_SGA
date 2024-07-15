@@ -15,8 +15,8 @@
             </div>
         </header>
         <section class="video-section">
-            <video class="video" autoplay controls muted src="./assets/video/demo8.mp4" >
-                <source src="./assets/video/demo8.mp4">
+            <video class="video" autoplay controls muted src="./assets/video/demo7.mp4" >
+                <source src="./assets/video/demo7.mp4">
                 This browser don't support HTML5 video and audio
             </video>
         </section>
@@ -92,7 +92,7 @@
                             <a href="demo8.html" class="nav_link nav__link--inside">RAID volumes </a>
                         </li>
                         <li class="list__inside">
-                            <a href="demo9.html" class="nav_link nav__link--inside">VDO volumes </a>
+                            <a href="demo9.html" class="nav_link nav__link--inside">Iniciador iSCSI</a>
                         </li>
                         <li class="list__inside">
                             <a href="demo10.html" class="nav_link nav__link--inside">NFS share </a>
@@ -110,19 +110,19 @@
                     </div>
                     <ul class="list__show">
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Configuración de direcciones de IP estáticas </a>
+                            <a href="demo11.html" class="nav_link nav__link--inside">Configuración de direcciones de IP estáticas </a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Unión de interfaces de red </a>
+                            <a href="demo12.html" class="nav_link nav__link--inside">Vinculación de interfaz de red </a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Configuración de equipos de interfaz </a>
+                            <a href="demo13.html" class="nav_link nav__link--inside">Configuración de equipos de interfaz </a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Creación de VLAN </a>
+                            <a href="demo14.html" class="nav_link nav__link--inside">Creación de VLAN</a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Levantar Cortafuegos</a>
+                            <a href="demo15.html" class="nav_link nav__link--inside">Levantar Cortafuegos</a>
                         </li>
                     </ul>
                 </li>
@@ -180,17 +180,27 @@
             </ul>
         </section>
         <section class="information-section">
-            <div class="infomation_main">
-                <h3>Infomación</h3>
-            <p>En este taller de administración se presentará la herramienta LUFAC SGA. Una herramienta de administración por y para las soluciones LUFAC disponibles en el mercado, como son:</p>
-            <ul>
-                <li> <b>Estaciones de trabajo:</b> Las Estaciones de Trabajo o Workstations son soluciones LUFAC de alto nivel de personalización  </li>
-                <li><b>Cerebro:</b>Cerebro es una solución LUFAC especializada en el uso de GPU y CPU orientado a la programación científica</li>
-                <li><b>Servidores:</b>Equipos de cómputo especializado establecer relaciones clientes-servidor</li>
-                <li><b>Clusters:</b>Sistemas distribuidos para conjuntos de computadoras unidas entre sí que se comportan como si fuesen un único servidor.</li>
+            <div class="information_main">
+                <h3 class="information_title">Logical Volumen Manager(LVM)</h3>
+            <p class="information_p">
+                Logical Volumen Manager es una herramienta que permite convertir una serie de discos o dispositivos de almacenamiento físicos en un volume group o grupo de volumenes y a su vez este grupo de volumenes para darle espacio a logical volume o volumenes lógicos. Que es mucho mejor user en el ambiente de servidores y clusteres, que las particiones comunes. En las particiones físicas si queriamos tener el <code>home</code> separado del <code>root</code> tenía que ser una partición física. Si no quedamos sin espacio era complicado hacer una migración. LVM surge para ayudarnos con este tipo de problemas. Podemos expadir las particiones.   
+            </p>
+            <p class="information_p">
+                Una de la ventajas de no se suele decir es que podemos tener diferentes LVM con diferentes file system. Ejemplo si tenemos una maquina de alto rendimiento que esta sirviendo mucha información; podemos tener un LVM <code>/var/www</code> la podemos tener como xfs y podemos tener el <code>root</code> como ext4. Pero no es la única ventaja LVM te permite usar diferente tecnología del almacenamiento dentro de un mismo volume group, por ejemplo: Puedes tener un SATA y un MDOS funcionando en conjunto, dondo la misma cantidad de espacio como si fuera un 2 en 1 
+            </p>
+            <p class="information_p">
+                LUFAC_SGA integra LVM2, una evolución de LVM1 con mejoras significativas en términos de eficiencia, flexibilidad y confiabilidad. LVM2 reemplazó a LVM1 y es compatible con LVM1, las mejoras que dispone son:
+            </p>
+            <ul class="information_ul">
+                <li><b>Marco de trabajo de kernel más genérico:</b> LVM2 utiliza el controlador de mapeo de dispositivos (device mapper) del kernel 2.6.</li>
+                <li><b>Metadatos más eficientes:</b>  LVM2 utiliza un formato de metadatos más eficiente.</li>
+                <li><b>Recuperación mejorada:</b> LVM2 tiene un mejor formato de recuperación.</li>
+                <li><b>Metadatos en formato ASCII:</b>  Facilita la administración y la recuperación.</li>
+                <li><b>Cambios atómicos en los metadatos:</b>  Evita problemas de consistencia.</li>
+                <li><b>Copias redundantes de los metadatos:</b> Mayor fiabilidad.</li>
             </ul>
-            <p>
-                La herramienta pretende facilitar el uso de las soluciones LUFAC incorporando el uso de nuevas herramientas con el objetivo de sacar el mayor provecho y productividad de la solución LUFAC
+            <p class="information_p">
+                Es posible convertir un grupo de volúmenes de LVM1 a LVM2 utilizando el comando <code>vgconvert</code>.
             </p>
 
             </div>

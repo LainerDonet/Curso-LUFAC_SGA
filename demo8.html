@@ -15,8 +15,8 @@
             </div>
         </header>
         <section class="video-section">
-            <video class="video" autoplay controls muted src="./assets/video/demo9.mp4" >
-                <source src="./assets/video/demo9.mp4">
+            <video class="video" autoplay controls muted src="./assets/video/demo8.mp4" >
+                <source src="./assets/video/demo8.mp4">
                 This browser don't support HTML5 video and audio
             </video>
         </section>
@@ -92,7 +92,7 @@
                             <a href="demo8.html" class="nav_link nav__link--inside">RAID volumes </a>
                         </li>
                         <li class="list__inside">
-                            <a href="demo9.html" class="nav_link nav__link--inside">VDO volumes </a>
+                            <a href="demo9.html" class="nav_link nav__link--inside">Iniciador iSCSI</a>
                         </li>
                         <li class="list__inside">
                             <a href="demo10.html" class="nav_link nav__link--inside">NFS share </a>
@@ -110,19 +110,19 @@
                     </div>
                     <ul class="list__show">
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Configuración de direcciones de IP estáticas </a>
+                            <a href="demo11.html" class="nav_link nav__link--inside">Configuración de direcciones de IP estáticas </a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Unión de interfaces de red </a>
+                            <a href="demo12.html" class="nav_link nav__link--inside">Vinculación de interfaz de red </a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Configuración de equipos de interfaz </a>
+                            <a href="demo13.html" class="nav_link nav__link--inside">Configuración de equipos de interfaz </a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Creación de VLAN </a>
+                            <a href="demo14.html" class="nav_link nav__link--inside">Creación de VLAN</a>
                         </li>
                         <li class="list__inside">
-                            <a href="#" class="nav_link nav__link--inside">Levantar Cortafuegos</a>
+                            <a href="demo15.html" class="nav_link nav__link--inside">Levantar Cortafuegos</a>
                         </li>
                     </ul>
                 </li>
@@ -180,18 +180,21 @@
             </ul>
         </section>
         <section class="information-section">
-            <div class="infomation_main">
-                <h3>Infomación</h3>
-            <p>En este taller de administración se presentará la herramienta LUFAC SGA. Una herramienta de administración por y para las soluciones LUFAC disponibles en el mercado, como son:</p>
-            <ul>
-                <li> <b>Estaciones de trabajo:</b> Las Estaciones de Trabajo o Workstations son soluciones LUFAC de alto nivel de personalización  </li>
-                <li><b>Cerebro:</b>Cerebro es una solución LUFAC especializada en el uso de GPU y CPU orientado a la programación científica</li>
-                <li><b>Servidores:</b>Equipos de cómputo especializado establecer relaciones clientes-servidor</li>
-                <li><b>Clusters:</b>Sistemas distribuidos para conjuntos de computadoras unidas entre sí que se comportan como si fuesen un único servidor.</li>
-            </ul>
-            <p>
-                La herramienta pretende facilitar el uso de las soluciones LUFAC incorporando el uso de nuevas herramientas con el objetivo de sacar el mayor provecho y productividad de la solución LUFAC
-            </p>
+            <div class="information_main">
+                <h1 class="information_title"> Arreglos redundantes de discos independientes - RAID(Redundant Arrays of Independent Disks)</h1>
+                <p class="information_p">
+                    El subsistema <a href="https://docs.redhat.com/es/documentation/red_hat_enterprise_linux/8/html/managing_storage_devices/_mdraid">MDRAID</a> fue diseñado como una solución RAID por software para Linux; también es la solución preferida para RAID por software en Linux. Este subsistema utiliza su propio formato de metadatos, generalmente conocido como metadatos MD nativos.
+                </p>
+                <p class="information_p">
+                    MDRAID también soporta otros formatos de metadatos, conocidos como metadatos externos. GNU/Linux utiliza MDRAID con metadatos externos para acceder a los conjuntos ISW / IMSM (Intel firmware RAID) y SNIA DDF. Los conjuntos MDRAID se configuran y controlan a través de la utilidad mdadm.
+                </p>
+                <p class="information_p"><b>Creación de RAID por software</b></p>
+                <p class="information_p">
+                    Los dispositivos RAID se construyen a partir de varios dispositivos de almacenamiento que se organizan para proporcionar un mayor rendimiento y, en algunas configuraciones, una mayor tolerancia a los fallos.
+                </p>
+                <p class="information_p">
+                    Un dispositivo RAID se crea en un solo paso y los discos se añaden o eliminan según sea necesario. Puede configurar una partición RAID para cada disco físico de su sistema, por lo que el número de discos disponibles para el programa de instalación determina los niveles de dispositivo RAID disponibles. Por ejemplo, si su sistema tiene dos discos duros, no puede crear un dispositivo RAID 10, ya que requiere un mínimo de tres discos separados.
+                </p>
 
             </div>
             
